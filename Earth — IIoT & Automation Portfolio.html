@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anupong (Earth) — IIoT & Automation Portfolio</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--tx:#14181f;--mut:#5b6573;--ac:#0b6bcb;--bd:#e2e6ec;--chip:#e8f1fb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1318;--card:#171c23;--tx:#e8ecf1;--mut:#9aa5b4;--ac:#5aa8f5;--bd:#262d37;--chip:#1c2a3a}}
+:root[data-theme="dark"]{--bg:#0f1318;--card:#171c23;--tx:#e8ecf1;--mut:#9aa5b4;--ac:#5aa8f5;--bd:#262d37;--chip:#1c2a3a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 -apple-system,"Segoe UI","Noto Sans Thai",Roboto,sans-serif}
+main{max-width:860px;margin:0 auto;padding:32px 20px 60px}
+h1{font-size:2rem;margin:0 0 4px}
+h2{font-size:1.15rem;margin:36px 0 12px;padding-bottom:6px;border-bottom:2px solid var(--ac);letter-spacing:.02em}
+h3{margin:0 0 4px;font-size:1.05rem}
+.sub{color:var(--mut);margin:0}
+.lead{margin:16px 0}
+a{color:var(--ac)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.btn{padding:8px 16px;border-radius:8px;border:1px solid var(--ac);text-decoration:none;font-weight:600}
+.btn.p{background:var(--ac);color:#fff}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:18px;margin-bottom:14px}
+.meta{color:var(--mut);font-size:.9rem;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.chip{background:var(--chip);color:var(--ac);padding:2px 10px;border-radius:999px;font-size:.82rem;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+ul{margin:6px 0 0;padding-left:20px}
+li{margin:3px 0}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Anupong Wantha (Earth)</h1>
+  <p class="sub">IoT / Automation Technician · PLC Programmer · IIoT</p>
+  <p class="lead">Smart Manufacturing student studying in China (Laiwu Technical College), graduating January 2027. I connect PLCs to data pipelines and dashboards: from a control program on the factory floor to OEE metrics on a screen. Looking for IoT/Automation roles at manufacturing companies in the Chonburi / Bangkok industrial area.<br>
+  <span class="sub">อนุพงษ์ · สื่อสารได้ทั้งภาษาไทยและอังกฤษ · กำลังพัฒนาภาษาจีน (HSK 4 เป็นเป้าหมาย)</span></p>
+  <div class="btns">
+    <a class="btn p" href="https://youtu.be/qOsXagn90bw" target="_blank" rel="noopener">▶ Watch project demo</a>
+    <a class="btn" href="https://github.com/Anupong-Wantha" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</header>
+
+<h2>FEATURED PROJECT</h2>
+<div class="card">
+  <h3>Smart Factory Simulation: PLC → OPC UA → Dashboard</h3>
+  <div class="meta">Factory I/O · CODESYS · OPC UA · Node-RED · InfluxDB · Grafana</div>
+  <p style="margin:0">An end-to-end IIoT pipeline on a simulated sorting line. A CODESYS PLC runtime controls the Factory I/O scene, exposes data over OPC UA, and Node-RED bridges it into a time-series database for dashboards and OEE tracking.</p>
+  <ul>
+    <li>Built a "Sorting by Height (Advanced)" scene with a full Node-RED flow</li>
+    <li>Designed an ISA-101 styled SCADA/HMI dashboard with SVG mimic diagrams</li>
+    <li>Storing machine data in InfluxDB; now adding retention policies, downsampling and Docker containerization</li>
+  </ul>
+  <div class="chips"><span class="chip">PLC</span><span class="chip">OPC UA</span><span class="chip">SCADA/HMI</span><span class="chip">OEE</span><span class="chip">Time-series DB</span></div>
+  <div class="btns"><a class="btn p" href="https://youtu.be/qOsXagn90bw" target="_blank" rel="noopener">Demo video</a></div>
+</div>
+
+<h2>EXPERIENCE</h2>
+<div class="card">
+  <h3>Assistant (Intern) — Siam Toyota Manufacturing Co., Ltd. (STM)</h3>
+  <div class="meta">Sep 2024 – Feb 2025</div>
+  <ul>
+    <li>Worked on an IoT, SCADA-like system for tracking AGVs, so staff can locate a vehicle that stops mid-route to a production line</li>
+    <li>Built the web dashboard on top of the data-collection backend</li>
+    <li>Worked in a real production environment and with factory engineers</li>
+  </ul>
+</div>
+
+<h2>SKILLS</h2>
+<div class="grid">
+  <div class="card"><h3>Industrial</h3>
+    <ul><li>PLC: Ladder, Structured Text</li><li>Siemens, Mitsubishi, Omron (hands-on exposure)</li><li>Sensors, OPC UA, Modbus</li></ul></div>
+  <div class="card"><h3>IoT / Embedded</h3>
+    <ul><li>ESP32, Arduino</li><li>MQTT, REST API</li><li>Node-RED</li></ul></div>
+  <div class="card"><h3>Data &amp; Dashboards</h3>
+    <ul><li>InfluxDB, SQL / NoSQL</li><li>Grafana</li></ul></div>
+  <div class="card"><h3>Software</h3>
+    <ul><li>Node.js, Python</li><li>React, Vue</li><li>Git / GitHub</li></ul></div>
+</div>
+
+<h2>EDUCATION &amp; CERTIFICATES</h2>
+<div class="card">
+  <ul>
+    <li><b>Laiwu Technical College (China)</b>: Smart Manufacturing, 1-year program, graduating Jan 2027</li>
+    <li><b>Chonburi Technical College</b>: High Vocational Certificate (ปวส.), Technology Computer</li>
+    <li><b>NECTEC</b> certificate (IIoT)</li>
+    <li>Competed in a vocational skills competition in China (Siemens PLC)</li>
+  </ul>
+</div>
+
+<h2>CONTACT</h2>
+<div class="card">
+  <p style="margin:0">Open to IoT / Automation Technician and PLC Programmer roles. Based in Thailand; available from January 2027.<br>
+  GitHub: <a href="https://github.com/Anupong-Wantha" target="_blank" rel="noopener">Anupong-Wantha</a></p>
+</div>
+</main>
+</body>
+</html>
